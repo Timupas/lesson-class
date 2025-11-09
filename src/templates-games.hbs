@@ -1,0 +1,13 @@
+{{#each games}}
+  <li class="item">
+    {{#if images}}
+    <img src="{{images}}" alt="{{title}}" class="imag" />
+    {{else}}
+    <img src="https://miro.medium.com/1*MXyMqcEJ6Se0SCWcYCKZTQ.jpeg" alt="{{title}}" class="imag" />
+    {{/if}}
+    <h2 class="title">{{title}}</h2>
+    <p class="genere">{{genre}}</p>
+    <p class="plat">{{platforms}}</p>
+    <p class="desk">{{note}}</p>
+  </li>
+{{/each}}
